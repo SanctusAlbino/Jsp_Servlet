@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>GET과 POST 요청 해보기</h1>
+	<p>폼태그 만들기 p</p>
+	<form action="Ex03_GetPost" method="get">
+		<input type="text" name="txt1" id="txt2">
+		<input type="submit">
+	
+	</form>
+
+</body>
+</html>

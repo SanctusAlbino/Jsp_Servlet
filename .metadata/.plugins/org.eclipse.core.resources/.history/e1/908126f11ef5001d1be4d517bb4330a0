@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1> GET과 POST 요청 해보기</h1>
+	<p>폼태그 만들기 p</p> 
+	<table>
+  <tr>
+    <th>Column 1 Heading</th>
+    <th>Column 2 Heading</th>
+  </tr>
+  <tr>
+    <td>Row 1: Col 1</td>
+    <td>Row 1: Col 2</td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>GET과 POST 요청 해보기</h1>
+	<p>폼태그 만들기 p</p>
+	<form action="Ex03_GetPost" method="get">
+		<input type="text" name="txt1" id="txt2">
+		<input type="submit">
+	</form>
+	<form action="Ex03_GetPost" method="post">
+		<input type="text" name="txt1" id="txt2">
+		<input type="submit">
+	</form>
+	
+	<!-- a태그로 Ex03_GetPost요청해보기 하면서 txt1이라는 변수에 값 1234를 내보내기.-->
+	<a href="Ex03_GetPost">dkjflsdfdk</a>
+	<a href="https://www.naver.com/index.html">dkjflsk</a>
+
+
+</body>
+</html>
