@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>tag</h1>
+	<h3>nestat -ano(포트확인)</h3>
+	
+	<h1>JSP</h1>
+	<h2>여기서 배우는 내용은 개념이나 해당하는게 있다 존재여부가 중요하지 외우거나 할필요없음</h2>
+	<h2>스크립트태그 (Script Tag)</h2>
+	
+	<ul>
+		<li><a href="01.Script/Ex00Into.jsp">태그 처음 사용</a></li>
+		<li><a href="01.Script/Ex01Var.jsp">변수 차이 알아보기</a></li>
+		<li><a href="01.Script/Ex02If.jsp">제어문(IF)</a></li>
+		<li><a href="01.Script/Ex03For.jsp">반복문(FOR)</a></li>
+	</ul>
+	
+	
+	
+</body>
+</html>
