@@ -160,7 +160,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\Study_JspServlet\WorkSpace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\Study_JspServlet\WorkSpace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\01.HelloJspServlet" path="/KGH" reloadable="true" source="org.eclipse.jst.jee.server:01.HelloJspServlet"/><Context docBase="D:\Study_JspServlet\WorkSpace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\02.DogetDoPost" path="/do" reloadable="true" source="org.eclipse.jst.jee.server:02.DogetDoPost"/><Context docBase="D:\Study_JspServlet\WorkSpace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\03.Tag" path="/tag" reloadable="true" source="org.eclipse.jst.jee.server:03.Tag"/></Host>
+      <Context docBase="D:\Study_JspServlet\WorkSpace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\Study_JspServlet\WorkSpace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\04.Implicit" path="/imp" reloadable="true" source="org.eclipse.jst.jee.server:04.Implicit"/><Context docBase="D:\Study_JspServlet\WorkSpace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\05.Mybatis" path="/myb" reloadable="true" source="org.eclipse.jst.jee.server:05.Mybatis"/></Host>
     </Engine>
   </Service>
 </Server>

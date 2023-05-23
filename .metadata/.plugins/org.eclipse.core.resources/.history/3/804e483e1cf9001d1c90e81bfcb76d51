@@ -1,0 +1,30 @@
+package Controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("*.kgh")
+public class KghController extends HttpServlet {
+	RequestDispatcher rd;
+	@Override
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println(req.getServletPath());
+		if(req.getServletPath().equals("/list.kgh")) {
+			rd= req.getRequestDispatcher("kghjstl/kghlist.jsp");
+		}else if(req.getServletPath().equals("/kghlist2.js")){
+		else {
+		
+			rd= req.getRequestDispatcher("error/list.jsp"); //나중에 추가예정KGH 날짜등등
+		}
+		rd.forward(req, resp);
+	}
+	
+
+}

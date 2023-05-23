@@ -1,0 +1,46 @@
+package Controller;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Kgh.KghVO;
+
+
+@WebServlet("*.kgh")
+public class KghController extends HttpServlet {
+	RequestDispatcher rd;
+	@Override
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println(req.getServletPath());
+		if(req.getServletPath().equals("/list.kgh")) {
+			ArrayList<KghVO> list = new ArrayList<>();
+			// <> <- Object를 상속받은 Class타입만 넣을수있음.
+			for (int i = 0; i < 10; i++) {
+				KghVO vo = new KghVO();
+				vo.setField1("필드1" +i);
+				vo.setField2(10+i);
+				list.add(vo);
+			}
+		
+			req.setAttribute("list", list);
+			rd= req.getRequestDispatcher("kghjstl/kghlist.jsp");
+		}	
+			
+		}else if(req.getServletPath().equals("/list2.kgh")){
+			rd= req.getRequestDispatcher("kghjstl/kghlist2.jsp");
+		}else {
+		
+			rd= req.getRequestDispatcher("error/list.jsp"); //나중에 추가예정KGH 날짜등등
+		}
+		rd.forward(req, resp);
+	}
+	
+
+}

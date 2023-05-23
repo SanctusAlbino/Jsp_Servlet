@@ -17,7 +17,7 @@ public class Ex01_Servlet extends HttpServlet {
 	//								POST : 요청받은 파라메터를 안보여주고 요청함.
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("사용자가 URL을 통해서 요청이 오면 여기 메소드가 실행됨");
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.getWriter().append("Served at: kgh").append(request.getContextPath());
 	}
 
 }

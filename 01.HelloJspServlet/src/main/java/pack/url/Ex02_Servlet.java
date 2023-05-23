@@ -12,7 +12,7 @@ public class Ex02_Servlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("되냐?");
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.getWriter().append("Served at: dld").append(request.getContextPath());
 	}
 
 }

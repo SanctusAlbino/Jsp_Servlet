@@ -1,0 +1,20 @@
+package Controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/JstlController")
+public class JstlController extends HttpServlet {
+	// doGet, doPost <= Spring에서는 default로 두가지가 합쳐진 버전의 메소드를 활용을 한다.
+	// service ( get, post 의 모든 요청을 받는 메소드)
+	@Override
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//System.out.println("doGet, doPost를 전부 처리할 수가 있다.");
+		System.out.println(req.getMethod());
+	}
+
+}
