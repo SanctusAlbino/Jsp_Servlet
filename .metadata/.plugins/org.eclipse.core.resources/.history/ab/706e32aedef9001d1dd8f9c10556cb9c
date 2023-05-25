@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Kgh">
+  <select id="dual" resultType="Integer">
+    select 1 from dual
+<!--   private String field1;
+	private int field2; -->
+  </select>
+  <select id="voselect" resultType="Kgh.KghVO">
+  	select 'dbfield1' field1, 888 field2 from dual
+  	union
+  	select 'dbfield2' field1, 9999 field2 from dual
+  </select>
+  <select id="selectwhere1" resultType="String">
+  	select NAME from customer where id =
+  </select>
+</mapper>

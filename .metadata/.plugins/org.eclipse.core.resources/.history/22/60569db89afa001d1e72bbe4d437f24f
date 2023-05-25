@@ -1,0 +1,23 @@
+package customer;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+public class CustomerDAO {
+	// 싱글톤 (static {} 블럭킹을 만들어서 CustomerDAO가 사용될때 무조건 먼저 실행 될 코드를 넣어둠)
+	
+	String resource = "mybatis/conn.xml";
+	InputStream inputStream=null;
+	try {
+		inputStream = Resources.getResourceAsStream(resource);
+	} catch (IOException e) {
+		
+		e.printStackTrace();
+	}
+	SqlSessionFactory sqlSessionFactory =
+	  new SqlSessionFactoryBuilder().build(inputStream);
+}

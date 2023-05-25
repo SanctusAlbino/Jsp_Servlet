@@ -32,7 +32,9 @@
 			</h1>
 			<ul id="gnb">
 				<li><a href="list.js">JSTL(TEST_DB)</a></li>
-				<li><a href="#">사원목록</a></li>
+				<!--list.cu가 요청되면 요청을 받을 Servlet을 만들고
+				customer/list.jsp파일로 요청이 전달되게 처리해보기  -->
+				<li><a href="list.cu">사원목록</a></li>
 				<li><a href="#">고객관리</a></li>
 				<li><a href="list.kgh">내이니셜</a></li>
 				<!--list.kgh을 요청하면 요청을 받을수있는 Controller를 추가한다.
@@ -41,7 +43,7 @@
 					kgh.list.jsp <=이파일이 실행되고
 					el과 jstl을 사용해서 보여준다.
 					  -->
-				<li><a href="#">게시판</a></li>
+				<li><a href="MybatisController.bat">mybatis</a></li>
 			</ul>
 
 

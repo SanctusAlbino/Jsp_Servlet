@@ -11,11 +11,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import Kgh.KghVO;
+import oracle.jdbc.driver.OracleDriver;
 
 
 @WebServlet("*.kgh")
 public class KghController extends HttpServlet {
 	RequestDispatcher rd;
+	
+	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println(req.getServletPath());

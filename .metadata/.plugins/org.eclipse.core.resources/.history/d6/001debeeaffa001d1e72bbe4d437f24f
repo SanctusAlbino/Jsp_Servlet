@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- select의 결과를 받기위해서 타입 짖ㅇ 필수  -->
+<mapper namespace="cu">
+  <select id="list" resultType="Kgh.CustomerVO">
+    select * from customer
+  </select>
+  <select id="detail" resultType="Kgh.CustomerVO">
+  	select* from CUSTOMER
+  	where ID =#{id}
+  </select>
+  <update id="update">
+  	update customer set email = #{email}, phone = #{phone} 
+  	where id =#{id}
+  </update>
+  <insert id="insert">
+  	insert into customer VALUES (#{id},#{name},#{gender},#{email},#{phone})
+  </insert>
+  
+  
+  
+</mapper>

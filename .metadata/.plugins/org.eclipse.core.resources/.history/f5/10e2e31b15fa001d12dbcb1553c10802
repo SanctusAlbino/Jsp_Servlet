@@ -1,0 +1,21 @@
+package controller;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+/**
+ * Servlet implementation class MybatisController2
+ */
+@WebServlet("/MybatisController2")
+public class MybatisController2 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public MybatisController2() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+}

@@ -1,0 +1,32 @@
+package Kgh;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+public class KghDAO {
+	public void test() {
+		String resource = "mybatis/conn.xml";
+		InputStream inputStream=null;
+		try {
+			inputStream = Resources.getResourceAsStream(resource);
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		SqlSessionFactory sqlSessionFactory =
+		  new SqlSessionFactoryBuilder().build(inputStream);
+		
+		try (SqlSession session = sqlSessionFactory.openSession()) {
+			  int dualInt = session.selectOne("");
+			  //session.method(-> . insert, update, delete, selectone, selectList)
+			  //seletOne . selectList
+			  //데이터 한건, 여러건 조회
+			  //selectOne("")
+			  System.out.println("mybatis를 통해 select : "+ dualInt);
+			}
+	}
+}

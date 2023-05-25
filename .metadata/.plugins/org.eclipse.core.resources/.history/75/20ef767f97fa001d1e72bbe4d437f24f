@@ -1,0 +1,31 @@
+package Controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("*.cu") //하나의 요청씩 처리 /list.cu
+					// 특정 규칙을 가진 구분자의 모든 처리 (cu) : '/'(x), *.cu
+					// Servlet파일 추가시 꼭 해야할것 => server restart
+public class CustomerController extends HttpServlet {
+	RequestDispatcher rd;
+	@Override
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("cu");
+		String mapping = req.getServletPath();
+		if(mapping.equals("/list.cu")) {
+			System.out.println("list.jsp여는 처리를 넣어줌");
+		}else {
+			System.out.println("잘못된 요청이기때문에 어떤 처리를 할지 생각해야함");
+		}
+		
+		
+	}
+
+}
